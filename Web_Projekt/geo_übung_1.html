@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de-de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="../ressources/Startseite/favicon.ico">    
+    <title>Geography Ubung</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="geo_übung_1.css"> -->
+    <!-- <link rel="stylesheet" href="geo_übung_1.css"> -->
+    <!-- Hyperlink fuer Icon in fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <script src="geo_übung_1.js"" async></script>
+</head>
+
+<body id="geo_ubung_body">
+    <div id="geo_ubung_header">
+        <div class="geo_ubung_header_titel">
+            <h3><span><span><i class="fa-solid fa-house item"></i></span></span>Kids Academy</h3>
+        </div>
+    </div>
+    
+    <nav id="navigation">
+        <div id="toggle"><i id="toggle__control" class="fa-solid fa-bars"></i></div>
+        <div id="nav_content" class="div-nav">
+            <ul class="navigation__list">
+                <li class="navigation__list__item"><a href="index.html">Startseite</a></li>
+                <li class="navigation__list__item"><a href="Biologie_lernseite_1.html">Biologie Lektion</a></li>
+                <li class="navigation__list__item"><a href="Biologie_lernseite_2.html">Biologie Übung</a></li>
+                <li class="navigation__list__item"><a href="geo_lernseite_1.html">Geography Lektion</a></li>
+                <li class="navigation__list__item"><a href="geo_übung_1.html">Geography Übung</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div id="geo_ubung_leftContent">
+
+        <h3>List von Aufgaben</h3>
+        <div id="geo_ubung_leftContent__Ubungliste">
+            <ul>
+                <li class="leftContent__list"><a href="#mainContent__aufgabe1">Aufgabe 1</a></li>
+                <li class="leftContent__list"><a href="#mainContent__aufgabe2">Aufgabe 2</a></li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <div id="geo_ubung_mainContent">
+        <section id="mainContent__titel"> 
+            <h1>Ubung Aufgaben <span><i class="fa-solid fa-book-open"></i></span></h1>
+            <p>Im vorherigen Abschnitt haben wir gemeinsam sehr nützliche und umfassende Lektionen über die Geographie verschiedener Länder der Welt gelernt. Jetzt ist es an der Zeit, dass wir gemeinsam die theoretischen Teile durch interaktive Übungen wiederholen. Dies wird euch helfen, euch die Informationen besser zu merken, indem ihr Bildübungen und Rätsel interagiert. Wenn jemand von euch die Theorie noch nicht gelesen hat, kann er auf den Inhalt der Lektion über den folgenden Link zurückgreifen.</p>
+            <a href="geo_lernseite_1.html"><span><i id="hand-right" class="fa-solid fa-hand-point-right"></i></span>Geography springen</a>
+        </section> 
+        
+        <section id="mainContent__aufgabe1">
+            <h4>Aufgabe <span><i class="fa-solid fa-pencil"></i></span></h4>
+            <p>Jede Frage in den folgenden Übungen wird ein Bild zeigen, das entweder eine Flagge oder eine berühmte Sehenswürdigkeit eines Landes sein kann. Deine Aufgabe ist es, die Antwort in das vorgegebene Formular einzutragen. Beachte, dass die Verwendung von <mark>Groß- oder Kleinschreibung nicht wichtig</mark> Groß- oder Kleinschreibung nicht wichtig ist.</p>
+            <div>
+                <div>
+                    <img id="aufgabe1_img" src="/ressources/geo_europe_bilder/berlin.jpg" alt="Berlin Deutschland">
+                </div>
+                <div class="mainContent__aufgabe__antwort">
+                    <p>Zu welchem Land gehört das?</p>
+                    <p>Antwort: <span><input id="antwort" type="text" placeholder="Land eingeben"></span><button id="commit">bestätigen</button></p>
+                </div>
+                <div>
+                    <div id="antwort-richtig"><span><i id="check-richtig" class="fa-solid fa-check"></i></span>Prima!</div>
+                    <div id="antwort-falsch"><span><i id="check-falsche" class="fa-solid fa-x"></i></span>Falsch! <span><i class="fa-regular fa-face-sad-cry"></i></span></div>
+                </div>
+                <div id="aufgabe1_hinweis">
+                    <h5 id="aufgabe1_hilfe_anfragen">Click hier, um Hilfe anzufragen</h5>
+                    <p class="aufgabe1-antwort-hinweis">Das gehört zu Berlin und Berlin ist Hauptstadt von dem Land</p>
+                    <p class="aufgabe1-antwort-hinweis">Ahorn Blätter sind Symbol von dem Land</p>
+                    <p class="aufgabe1-antwort-hinweis">Berühmt Tower in Europe und Nachbarn von Deutschland</p>
+                    <p class="aufgabe1-antwort-hinweis">Das gehört zu Americas und hat Blue Mahoe als Symbol</p>
+                    <p class="aufgabe1-antwort-hinweis">Bevölkerung von dem ist 10.42 Million in 2021 und gehört zu Europe</p>
+                    <p class="aufgabe1-antwort-hinweis">Stadtname heißt Havana</p>
+                    <p class="aufgabe1-antwort-hinweis">Das Land hat 92 152 km<sup>2</sup> Große und gehört zu Europe</p>
+                    <p class="aufgabe1-antwort-hinweis">Das liegt im ost südlich von Deutschland</p>
+                </div>
+            </div>
+            <div>
+                <button id="prequestion">Pre</button>
+                <button id="nextquestion">Next</button>
+            </div>
+        </section>
+
+        <section id="mainContent__aufgabe2">
+            <h4>Aufgabe <span><i class="fa-solid fa-pencil"></i></span></h4>
+            <div id="aufgabe2_background">
+                <img id="racing_car" class="racing_item" src="/ressources/geo_aufgabe2/racing-car.jpg" alt="racing car">
+                <div class="box box1">1</div>
+                <div class="box box2">2</div>
+                <div class="box box3">3</div>
+                <div class="box box4">4</div>
+                <div class="box box5">5</div>
+                <img id="ziel_flag" class="racing_item" src="/ressources/geo_aufgabe2/ziel-flags.png" alt="ziel-racing-flag">
+                
+                <div class="aufgabe2_question">
+                    <img class="aufgabe2_question__img" src="/ressources/geo_americas_bilder/rio-brazil.jpg" alt="Rio Brazil">
+                    <p>Zu welchem Land gehört diese Sehenswürdigkeit?</p>
+                    <div>
+                        <button class="antwort_button button_true">Brazil</button>
+                        <button class="antwort_button button_false">Cuba</button>
+                    </div>
+                </div>
+                <div class="aufgabe2_question">
+                    <img class="aufgabe2_question__img" src="/ressources/geo_americas_bilder/freedom_america.jpg" alt="freedom america">
+                    <p>Zu welchem Land gehört diese Sehenswürdigkeit?</p>
+                    <div>
+                        <button class="antwort_button button_true">America</button>
+                        <button class="antwort_button button_false">Canada</button>
+                    </div>
+                </div>
+                <div class="aufgabe2_question">
+                    <img class="aufgabe2_question__img" src="/ressources/geo_americas_bilder/major-cay-bahamas.jpg" alt="Major Cay Bahamas">
+                    <p>Zu welchem Land gehört diese Sehenswürdigkeit?</p>
+                    <div>
+                        <button class="antwort_button button_false">Jamaica</button>
+                        <button class="antwort_button button_true">Bahamas</button>
+                    </div>
+                </div>
+                <div class="aufgabe2_question">
+                    <img class="aufgabe2_question__img" src="/ressources/geo_europe_bilder/helsinki.jpg" alt="Helsinki Finnland">
+                    <p>Zu welchem Land gehört diese Sehenswürdigkeit?</p>
+                    <div>
+                        <button class="antwort_button button_true">Finnland</button>
+                        <button class="antwort_button button_false">Belgien</button>
+                    </div>
+                </div>
+                <div class="aufgabe2_question">
+                    <img class="aufgabe2_question__img" src="/ressources/geo_europe_bilder/malbork-polen.jpg" alt="Malbork Polen">
+                    <p>Zu welchem Land gehört diese Sehenswürdigkeit?</p>
+                    <div>
+                        <button class="antwort_button button_false">Spanien</button>
+                        <button class="antwort_button button_true">Polan</button>
+                    </div>
+                </div>
+                <p id="test"></p>
+            </div>
+        </section>
+
+        <section id="mainContent__aufgabe3">
+            <h4>Aufgabe <span><i class="fa-solid fa-pencil"></i></span></h4>
+
+            <div id="aufgabe3_background">
+                <div id="aufgabe3_antwort_background">
+                    <img class="antwort_karte" src="/ressources/geo_europe_bilder/ducketts-grove-irland.jpg" alt="">
+                    <img class="antwort_karte" src="/ressources/geo_europe_bilder/copenhagen.jpg" alt="">
+                    <img class="antwort_karte" src="/ressources/geo_europe_bilder/SantoriniGriechenLand.jpg" alt="">
+                    <img class="antwort_karte" src="/ressources/geo_europe_bilder/brussels.jpg" alt="">
+                    <img class="antwort_karte" src="/ressources/geo_americas_bilder/chichen-itza-mexico.jpg" alt="">
+                </div>
+                
+                <img id="fragen_karte" src="/ressources/geo_land_flag/Flag_of_Ireland.png" alt="Ireland Flag"> 
+            </div>
+        </section>
+    </div>
+
+    <div id="geo_ubung_rightContent">
+        <h4>Wir wünschen euch viel Spaß beim Lernen</h4>
+        <div>
+            <img id="smile_face" src="/ressources/icon-emotion/smileface.png" alt="smile face">
+        </div>
+    </div>
+    
+    <footer id="footer">
+        
+        <div id="footer-oben">
+            <h3>Kids Academy</h3>
+            <div>Image</div>
+        </div>
+        <hr>
+        <div id="footer-unter">
+            <address>
+                <p>Hochschule Worms</p>
+                <p>Erenburgstraße 19</p>
+                <p>67549 Worms</p>
+                <p>Deutschland</p>
+            </address>
+
+            <div id="footer-sociallink">
+                <p>Hier befinden Sie sich uns:</p>
+                <p>Instagram <a href="seite"><img class="socialsymbol" src="../ressources/icon-emotion/instagram-icon.svg" alt="instagram Symbol"></a></p>
+                <p>Facebook <a href="seite"><img class="socialsymbol" src="../ressources/icon-emotion/facebook-symbol.svg" alt="facebook symbol"></a></p>
+            </div>
+            
+        </div>
+    </footer>
+    
+</body>
+
+</html>

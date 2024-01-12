@@ -1,0 +1,991 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* ============ Startseite konzipieren ================= */
+#startseite{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+#mainseite{grid-area: main;}
+/* ==================== Header CSS =============================== */
+#ind_header {
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+    padding: 10px;
+    background-image: linear-gradient(180deg,rgb(231, 160, 22),rgb(242, 187, 79));
+}
+.ind_header__titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ind_header__titel i {
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+}
+.ind_header__titel i:hover {
+    cursor: pointer;
+}
+.ind_header__titel h3 {
+    padding: 5px;
+    color: white;
+}
+/* ============= Generelle Layout für Startseite Element ================ */
+#mainseite, #mainseite__infor, #mainseite__biolektion,
+#mainseite__bioübung, #mainseite__geolektion, #mainseite__geoübung
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainseite{
+    padding: 10px;
+}
+
+.mainseite_image {
+    padding: 1rem;
+}
+
+figcaption {
+    text-align: center;
+}
+
+#mainseite__biolektion, #mainseite__bioübung, #mainseite__geolektion, #mainseite__geoübung{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-top: 4px solid rgb(255, 160, 0);
+    padding: 1rem;
+    height: auto;
+    width: 100%;
+}
+#mainseite__biolektion {
+    /* Quelle: PublicDomainPicture pixabay.com */
+    background-image: url(../ressources/Startseite/mainseite_human-skeleton.jpg);
+}
+#mainseite__bioübung {
+    /* Quelle: mirerek8 pixabay.com */
+    background-image: url(../ressources/Startseite/mainseite_bioubung.jpg);
+}
+
+#mainseite__geolektion {
+    background-image: url(../ressources/Startseite/mainseite_globe_image.jpg);
+}
+
+#mainseite__geoübung {
+    /* Bilder Quelle: FelixMittermeier pixabay.com */
+    background-image: url(../ressources/Startseite/mainseite_geoubung_image.jpg);
+}
+
+#mainseite div > h2 {
+    color: rgb(224, 224, 224);
+}
+
+#mainseite__infor > h2:first-child{
+    color: black;
+}
+.mainseite_absatz {
+    color: rgb(224, 224, 224);
+}
+
+.spring_link {
+    color: yellow;
+    margin-top: 10px;
+}
+
+/* ================ Navigation Bar umgehen ================== */
+#navigation{
+    grid-area: nav;
+    background-image: linear-gradient(0deg,rgb(230, 163, 31),rgb(230, 179, 79));;
+    padding: 3px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.div-nav {
+    display: none;
+}
+.navigation__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+#toggle {
+    color: white;
+    text-align: right;
+    font-size: 25px;
+}
+#toggle:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.navigation__list__item {
+    background-color: none;
+    margin-bottom: 1rem;
+}
+.navigation__list__item > a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+.navigation__list__item > a:hover {
+    background-color: rgb(255, 241, 118);
+}
+
+/* ======================= Hier faengt Lektion Geography an =========================*/
+
+/* =========== Mobil First Grid Layout für Geography Lernseite konzipieren ==========*/
+#geo_lektion_body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        'header'
+        'nav'
+        'section'
+        'article'
+        'aside'
+        'footer';
+}
+#geo_section {
+    grid-area: section;
+    padding: 7px;
+}
+#geo_section__frame1, div#geo_section__learnwithfoto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#geo_section__frame1 {
+    border: 2px solid grey;
+}
+#geo_section__frame1 > h2 {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+iframe#flag_youtubeVideo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+div#geo_section__learnwithfoto {
+    border: 2px solid rgb(192, 202, 51);
+    margin-top: 10px;
+    background-color: rgb(224, 247, 250);
+}
+.kontinente_content {
+    display: none;
+    padding: 20px 100px;
+    animation: wirkung_anzeig 2s ease-out;
+}
+
+@keyframes wirkung_anzeig {
+    from {
+        transform: translateX(-25%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.page1{
+    display: block;
+}
+
+#geo_section__learnwithfoto__content__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    width: 100px;
+    background-image: linear-gradient(to bottom right, rgb(205, 220, 57),rgb(255, 238, 88) );
+}
+.button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* ==============Geography Article konzipieren================= */
+#geo_article {
+    grid-area: article;
+    padding: 7px;
+    margin-top: 5px;
+}
+
+#geo_article__asian,
+#geo_article__europe,
+#geo_article__americas
+ {
+    padding: 10px 25px;
+    margin-bottom: 5px;
+}
+
+#geo_article__asian {
+    border: 2px solid rgb(255, 235, 59);
+}
+#geo_article__europe {
+    border: 2px solid rgb(46, 204, 113);
+}
+#geo_article__americas {
+    border: 2px solid rgb(52, 73, 94);
+}
+
+.geo_article__flag {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 3px 3px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 0.5em 0;
+}
+.flag_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid rgb(255, 218, 185);
+    padding: 4px 4px;
+    max-width: 100px;
+    background-color: bisque;
+}
+.flag_box p {
+    font-size: 0.6em;
+    font-weight: 600;
+}
+.flag_image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
+
+#geo_article__kurzubung {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#quizz_zeichen {
+    font-size: 2rem;
+    animation-name: bewegen;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+.geo_article__kurzubung__layout{
+    display: none;
+    padding: 1rem;
+    border: 2px solid rgb(255, 241, 118);
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+    animation: ubung_wirkunganzeig 2s ease-in-out;
+}
+
+.layout1 {
+    display: block;
+}
+@keyframes ubung_wirkunganzeig {
+    from {
+        transform: translateX(-10%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+.quizz_flag_img {
+    height: auto;
+    width: 100%;
+}
+.anwort_button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aussage_button {
+    padding: 5px 10px;
+    width: 100px;
+    border-radius: 0.6rem;
+    margin: 0.7rem 0.1rem;
+}
+.aussage_button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(0, 188, 212),rgb(0, 96, 100));
+}
+.antwort {
+    display: none;
+    border-left: 6px solid greenyellow;
+    padding: 10px;
+    background-color: white;
+    animation: anwort_wirkunganzeig 2s infinite;
+}
+
+@keyframes anwort_wirkunganzeig {
+    from  {
+        background-color: rgb(100, 221, 23);
+    }
+    to {
+        background-color: rgb(178, 255, 89);
+    }
+}
+.falsch {
+    border-left: 6px solid red;
+    animation: falsche_wirkunganzeig 2s infinite;
+}
+
+@keyframes falsche_wirkunganzeig{
+    from  {
+        background-color: rgb(255, 61, 0);
+    }
+    to {
+        background-color: rgb(255, 158, 128);
+    }
+}
+
+.geo_article__kurzubung__layout p {
+    text-align: center;
+    margin: 5px 0;
+}
+.antwort > p{
+    padding: 5px 10px;
+}
+
+/* =============== Geography Europe CSS konzipieren ============== */
+#geo_article__hauptstadt__table {
+    border: 1px solid;
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    font-size: 12px;
+    border: 1px solid;
+}
+th {
+    padding: 0.7em;
+}
+th:hover{
+    background-color: rgb(241, 196, 15);
+}
+td {
+    padding: 5px;
+}
+td:hover {
+    background-color: rgb(0, 175, 240);
+}
+/* ================= Americas CSS konzipieren ==============*/
+
+#americas_infor {
+    position: relative;
+    margin-bottom: 1rem;
+}
+#americas_bilder {
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    z-index: -3;
+}
+#icon-pre, #icon-next {
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 2rem;
+}
+#icon-pre{
+    left: 10px;
+}
+#icon-next{
+    right: 10px;
+}
+#lightbulb {
+    font-size: 2rem;
+    color: yellow;
+    animation-name: bewegen;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes bewegen {
+    0% {transform: rotate(-20deg);}
+    50% {transform: rotate(0deg);}
+    100% {transform: rotate(20deg);}
+}
+#americas_absatz{
+    text-align: justify;
+    line-height: 1.5;
+    padding: 0 5rem;
+}
+
+#geo_aside {
+    grid-area: aside;
+    background-image: url(/ressources/geo_land_flag/aside_background.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#geo_aside > h3:first-child {
+    color: white;
+}
+#aside_agendseite ul{
+    list-style-type: none;
+}
+.agend_list{
+    margin: 2px 0;
+    padding: 3px;
+}
+.agend_list:hover{
+    background-color: rgb(245, 125, 0);
+}
+.agend_list > a {
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
+
+/* ===================== Footer für alle Seite Css ====================== */
+#footer {
+    grid-area: footer;
+    padding: 10px;
+    background-image: url(../ressources/icon-emotion/footer_background.jpg);
+}
+
+#footer-oben {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+#footer-unter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+address {
+    margin: 1rem 0;
+}
+address > p, #footer-sociallink > p{
+    font-size: 0.8rem;
+    color: white;
+}
+
+.socialsymbol {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-left: 4px;
+}
+
+#geo_ubung_body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    'header'
+    'nav'
+    'mainContent'
+    'leftContent'
+    'rightContent'
+    'footer';
+}
+#geo_ubung_header {
+    grid-area: header;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(45deg, rgb(231, 160, 22),rgb(242, 187, 79));
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+.geo_ubung_header_titel > h3:first-child{
+    color: white;
+}
+#geo_ubung_leftContent {
+    grid-area: leftContent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(224, 224, 224);
+}
+
+/* ============== CSS in GeoÜbung leftContetn =================== */
+#geo_ubung_leftContent__Ubungliste ul {
+    margin-top: 10px;
+    list-style-type: none;
+}
+.leftContent__list {
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+}
+.leftContent__list > a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+.leftContent__list > a:hover{
+    background-color: antiquewhite;
+}
+
+/* ======CSS in Maincontent====== */
+
+#geo_ubung_mainContent{
+    grid-area: mainContent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+}
+#mainContent__aufgabe1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#aufgabe1_img {
+    margin: 10px 0;
+}
+.mainContent__aufgabe__antwort{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 209, 128);
+    margin-bottom: 1rem;
+}
+
+#antwort-richtig,#antwort-falsch {
+    border-left: 4px solid rgb(118, 255, 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    display: none;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+}
+#antwort-richtig {
+    background-image: linear-gradient(90deg, rgb(118, 255, 3), rgb(204, 255, 144));
+}
+#antwort-falsch{
+    border-left: 4px solid rgb(255, 61, 0);
+    background-image: linear-gradient(135deg, rgb(255, 158, 128), rgb(255, 110, 64));
+}
+#check-richtig, #check-falsche {
+    border-radius: 50%;
+    border: 2px solid;
+    font-size: 2rem;
+    padding: 5px;
+    color: white;
+    border-color: white;
+    margin-right: 5px;
+}
+
+.fa-regular {
+    font-size: 2rem;
+    margin-left: 5px;
+}
+#aufgabe1_hinweis {
+    margin-top: 1rem;
+}
+#aufgabe1_hinweis > h5:first-child {
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.aufgabe1-antwort-hinweis {
+    display: none;
+    text-align: justify;
+}
+#aufgabe2_background {
+    background-image: url(../ressources/geo_aufgabe2/racing-race.jpg);
+    height: 402px;
+    width: 640px;
+    position: relative;
+}
+.box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid rgb(255, 64, 129);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    padding: 0.7rem;
+    color: white;
+    background-color: rgb(255, 64, 129);
+}
+.box1{
+    bottom: 100px;
+    right: 130px;
+}
+.box2{
+    bottom: 120px;
+    right: 224px;
+}
+.box3{
+    bottom: 45%;
+    right: 45%;
+}
+.box4{
+    top: 35%;
+    left: 30%;
+}
+.box5{
+    top: 35%;
+    left: 5%;
+}
+#cauhoi{
+    
+    position: absolute;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    top: -100px;
+}
+
+#racing_car {
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    opacity: 0.8;
+    z-index: 10;
+}
+#ziel_flag {
+    position: absolute;
+    top: 23%;
+    left: 3%;
+}
+.racing_item{
+    max-width: 4rem;
+    max-height: 4rem;
+}
+
+.aufgabe2_question{
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    bottom: 15%;
+    right: 15%;
+    z-index: 3;
+    background-color:bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.aufgabe2_question__img {
+    width: 100%;
+    height: 200px;
+}
+
+#aufgabe3_background {
+    position: relative;
+    background-image: url(/ressources/geo_aufgabe3/karte-background.jpg);
+    height: 402px;
+    width: 700px;
+}
+
+#aufgabe3_antwort_background {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 25px;
+    top: 50px;
+}
+.antwort_karte {
+    width: 8rem;
+    height: 7rem;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#fragen_karte {
+    position: absolute;
+    width: 8rem;
+    height: 7rem;
+    bottom: 5px;
+    left: 40%;
+}
+/* =========CSS in Rightcontent============== */
+
+#geo_ubung_rightContent{
+    grid-area: rightContent;
+    border-left: 4px solid rgb(255, 213, 79);
+    padding: 1rem;
+    
+}
+#smile_face {
+    width: 70%;
+    height: auto;
+}
+
+p + img {
+    margin-top: 10px;
+}
+
+h3,h4 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+h2 + p {
+    text-align: justify;
+    line-height: 1.4;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+p {
+    text-align: justify;
+}
+@media only screen and (min-width: 376px) and (min-height: 668px){
+
+    #ind_header {
+        height: 4rem;
+    }
+    
+    #mainseite{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+        'maininfor maininfor'
+        'biolektion bioubung'
+        'geolektion geoubung';
+        padding: 0;
+    }
+    #mainseite__infor {
+        grid-area: maininfor;
+        padding: 1rem 14rem;
+    }
+    #mainseite__biolektion{
+        grid-area: biolektion;
+        transition: width 1s ease-in, height 1s ease-in-out;
+
+    }
+    #mainseite__bioübung{
+        grid-area: bioubung;
+        transition: width 1s linear, height 1s ease-in-out;
+    }
+
+    #mainseite__geolektion{
+        grid-area: geolektion;
+        transition: width 1s ease-out, height 1s ease-out;
+        
+    }
+    #mainseite__geoübung{
+        grid-area: geoubung;
+        margin-top: 0;
+        transition-property: width,height;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+    }
+    #mainseite__geolektion:hover, #mainseite__geoübung:hover,
+    #mainseite__biolektion:hover, #mainseite__bioübung:hover {
+        height: 500px;
+    }
+
+    #mainseite__geolektion, #mainseite__geoübung,#mainseite__biolektion,
+    #mainseite__bioübung {
+        background-size: 100% 100%;
+        padding: 10px 4rem;
+        height: 400px;
+        border-top: none;
+    }
+    .mainseite_image > img {
+        width: 640px;
+        height: 427px;
+    }
+    /* ============= Navigation Bar konzipieren ===============*/
+
+    #navigation {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+    }
+
+    .navigation__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 2;
+    }
+
+    #nav_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 2;
+    }
+    #toggle {
+        display: none;
+    }
+    
+    .navigation__list__item {
+        margin: 0px 16px;
+    }
+    
+    /* ============ Geography Lernseite hier anfangen ===== */
+    #geo_lektion_body {
+        grid-template-columns: 15% 70% 15%;
+        grid-template-areas:
+        'header header header'
+        'nav nav nav'
+        'aside section section'
+        'aside article article'
+        'footer footer footer' ;
+    }
+    #geo_ubung_body {
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-areas: 
+        'header header header'
+        'nav nav nav'
+        'leftContent mainContent rightContent'
+        'footer footer footer';
+    }
+    #geo_section {
+        padding: 2rem 8rem;
+    }
+
+    #geo_section__frame1 {
+        padding: 1.5rem 10rem;
+        border-width: 5px;
+    }
+
+    iframe#flag_youtubeVideo {
+        width: 500px;
+        height: 300px;
+    }
+    div#geo_section__learnwithfoto {
+        padding: 2rem 10rem;
+        border-width: 5px;
+    }
+
+    .continent {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .geo_article__kurzubung__layout {
+        width: 500px;
+        height: auto;
+    }
+    #geo_article {
+        padding: 2rem 8rem;
+    }
+    #geo_article__asian, #geo_article__europe, #geo_article__americas
+    {
+        margin-bottom: 0.5em;
+        padding: 2rem 10rem;
+        border-width: 5px;
+    }
+    .geo_article__flag {
+        gap: 10px 10px;
+        max-height: 300px;
+        margin-top: 15px;
+        padding: 10px 30px;
+    }
+    .flag_box {
+       max-width: 230px; 
+       height: 200px;
+       align-items: center;
+    }
+    .flag_box p {
+        font-size: 1em;
+    }
+    #europe_bild, #asian_bild, #americas_bild {
+        max-width: 70%;
+        max-height: auto;
+        margin: 30px 0;
+    }
+    /* ============== Europe Sehenschwürdigkeiten mit Tabelle konzipieren =============*/
+
+    h3 + p {
+        margin: 1.5rem 0px;
+        line-height: 1.5;
+    }
+    #geo_article__hauptstadt__table {
+        border: 3px solid; 
+    }
+    th, td {
+        font-size: 1rem;
+        border-width: 3px;
+    }
+    .landen_hauptstadt {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    td img:first-child:hover{
+        max-width: 400px;
+        max-height: 400px;
+    }
+    /* =========== Geography Americas ========= */
+
+    #americas_bilder {
+        width: 640px;
+        height: 428px;
+    }
+    /* =========== Lernseite Aside  CSS konzipieren ==========*/
+    #geo_aside{
+        justify-content: start;
+        border-right: 5px solid rgb(255, 179, 0);
+    }
+    /* ============= Footer CSS konzipieren ================ */
+    #footer-unter, #footer-oben{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    address > p, #footer-sociallink > p{
+        font-size: 1rem;
+    }
+}
