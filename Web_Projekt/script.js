@@ -156,16 +156,16 @@ for (let index2 = 0; index2 < getAntwort3.length; index2++){
 // Americas Bilder umgehen
 // Bilder Quelle pixabay.com
 const imageArr = [
-    "/ressources/geo_americas_bilder/toronto-canada.jpg",
-    "/ressources/geo_americas_bilder/tikal-guatemala.jpg",
-    "/ressources/geo_americas_bilder/rio-brazil.jpg",
-    "/ressources/geo_americas_bilder/panama.jpg",
-    "/ressources/geo_americas_bilder/major-cay-bahamas.jpg",
-    "/ressources/geo_americas_bilder/jamaica-beach.jpg",
-    "/ressources/geo_americas_bilder/freedom_america.jpg",
-    "/ressources/geo_americas_bilder/cuba-havana.jpg",
-    "/ressources/geo_americas_bilder/costa-rica-kirsch.jpg",
-    "/ressources/geo_americas_bilder/chichen-itza-mexico.jpg",
+    "../ressources/geo_americas_bilder/toronto-canada.jpg",
+    "../ressources/geo_americas_bilder/tikal-guatemala.jpg",
+    "../ressources/geo_americas_bilder/rio-brazil.jpg",
+    "../ressources/geo_americas_bilder/panama.jpg",
+    "../ressources/geo_americas_bilder/major-cay-bahamas.jpg",
+    "../ressources/geo_americas_bilder/jamaica-beach.jpg",
+    "../ressources/geo_americas_bilder/freedom_america.jpg",
+    "../ressources/geo_americas_bilder/cuba-havana.jpg",
+    "../ressources/geo_americas_bilder/costa-rica-kirsch.jpg",
+    "../ressources/geo_americas_bilder/chichen-itza-mexico.jpg",
 ];
 
 const americas_absatzinfor = [
