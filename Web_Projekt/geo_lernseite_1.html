@@ -9,10 +9,7 @@
     <title>Startseite</title>
     
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="script.js"> -->
-
     <script src="script.js" async></script>
-
     <!-- Hyperlink fuer Icon in fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -21,12 +18,13 @@
     
     <header id="ind_header">
         <div class="ind_header__titel">
-            <i class="fa-solid fa-house"></i>
-            <h3>Worms Education</h3>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <h3>Kids Academie</h3>
         </div>
     </header>
     
     <nav id="navigation">
+
         <div id="toggle"><i id="toggle__control" class="fa-solid fa-bars"></i></div>
         <div id="nav_content" class="div-nav">
 
@@ -45,45 +43,54 @@
 
         <div id="geo_section__frame1">
 
-            <h2>Lass uns mit einem kleinen  Video anfangen</h2>
+            <h1>Lass uns mit einem kleinen  Video anfangen</h1><br>
             <p>&nbsp; &nbsp;Bis jetzt, wie viele Länder und deren Flaggen haben Sie bereits kennengelernt? Das unten stehende Video wird Ihnen einen umfassenden Überblick über die Länder und ihre Flaggen geben. Lassen Sie uns gemeinsam überprüfen, wie viele Flaggen Sie bereits kennen, und Ihr geografisches Wissen erweitern. Legen wir mal los!!! </p>
             <iframe id="flag_youtubeVideo" src="https://www.youtube.com/embed/eWXZ7-_o_R4" title="COUNTRIES of the World for Kids - Learn Continents, Countries Map, Names and Flags" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
         
         </div>
 
         <div id="geo_section__learnwithfoto">
-            <h3>Lass uns jetzt mit Kontinente kennen</h3>
+            <h2>Kontinente kennenlernen</h2>
             <div id="geo_section__learnwithfoto__content">
                 
                 <div class="kontinente_content page1">
                     <h4>Asian</h4>
-                    <div>
-                        <img class="continent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Asia_%28orthographic_projection%29.svg/1024px-Asia_%28orthographic_projection%29.svg.png" alt="Asian" title="Asian Kontinent">
-                    </div>
+                    <figure>
+                        <img class="continent" src="../ressources/Kontinent-Bilder/Asia.png" alt="Asian Kontinent Foto" title="Asian Kontinent"><br>
+                        <figcaption>Quelle: <a href="https://en.wikipedia.org/wiki/Asia" target="_blank">https://en.wikipedia.org/wiki/Asia</a></figcaption>
+                    </figure>
                 </div>
+
                 <div class="kontinente_content page2">
                     <h4>Europe</h4>
-                    <div>
-                        <img class="continent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg/1024px-Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg.png" alt="Europe" title="Europe">
-                    </div>
+                    <figure>
+                        <img class="continent" src="../ressources/Kontinent-Bilder/Europe.png" alt="Europe Kontinent Foto" title="Europe Kontinent"><br>
+                        <figcaption>Quelle: <a href="https://en.wikipedia.org/wiki/Europe" target="_blank">https://en.wikipedia.org/wiki/Europe</a></figcaption>
+                    </figure>
                 </div >
+
                 <div class="kontinente_content page3">
                     <h4>Americas</h4>
-                    <div>
-                        <img class="continent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Americas_%28orthographic_projection%29.svg/1024px-Americas_%28orthographic_projection%29.svg.png" alt="Americas" title="Americas">
-                    </div>
+                    <figure>
+                        <img class="continent" src="../ressources/Kontinent-Bilder/Americas.png" alt="Americas Kontinent Foto" title="Americas Kontinent"><br>
+                        <figcaption>Quelle: <a href="https://en.wikipedia.org/wiki/Americas" target="_blank">https://en.wikipedia.org/wiki/Americas</a></figcaption>
+                    </figure>
                 </div>
+                
                 <div class="kontinente_content page4">
                     <h4>Afrika</h4>
-                    <div>
-                        <img class="continent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Africa_%28orthographic_projection%29.svg/1024px-Africa_%28orthographic_projection%29.svg.png" alt="Afrika" title="Afrika">
-                    </div>
+                    <figure>
+                        <img class="continent" src="../ressources/Kontinent-Bilder/Africa.png" alt="Afrika Kontinent Foto" title="Afrika Kontinent"><br>
+                        <figcaption>Quelle: <a href="https://en.wikipedia.org/wiki/Africa" target="_blank">https://en.wikipedia.org/wiki/Africa</a></figcaption>
+                    </figure>
                 </div>
+
                 <div class="kontinente_content page5">
                     <h4>Oceania</h4>
-                    <div>
-                        <img class="continent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Oceania_%28orthographic_projection%29.svg/1024px-Oceania_%28orthographic_projection%29.svg.png" alt="Oceania" title="Oceania">
-                    </div>
+                    <figure>
+                        <img class="continent" src="../ressources/Kontinent-Bilder/Oceania.png" alt="Oceania Kontinent Foto" title="Oceania Kontinent"><br>
+                        <figcaption>Quelle: <a href="https://en.wikipedia.org/wiki/Australia_(continent)" target="_blank">https://en.wikipedia.org/wiki/Australia_(continent)</a></figcaption>
+                    </figure>
                 </div>
                 <div id="geo_section__learnwithfoto__content__button" >
                     <button id="pre" class="button" >Rückwärt</button>
@@ -95,522 +102,672 @@
     
     <article id="geo_article">
         <div id="geo_article__asian">
-            <div class="geo_article__einfuhrung">
-                <h3>ASIAN</h3>
-                <p>&nbsp;&nbsp;Asia, der größte Kontinent der Welt, ist für seine beeindruckende Vielfalt an Kulturen, Sprachen und Landschaften bekannt. Mit einer Fläche von über 44 Millionen Quadratkilometern beherbergt Asien eine reiche Geschichte, die von antiken Zivilisationen bis zu modernen Metropolen reicht. Die atemberaubenden Gebirge des Himalaya, die exotischen Strände Südostasiens, die Wüsten des Nahen Ostens und die pulsierenden Städte wie Tokio, Peking und Mumbai verleihen Asien eine faszinierende Anziehungskraft. Die Menschen in Asien sprechen eine Vielzahl von Sprachen, darunter Mandarin, Hindi, Arabisch und viele mehr. Die kulinarische Vielfalt, von der scharfen Küche Thailands bis zur raffinierten chinesischen Kochkunst, spiegelt die reiche kulturelle Erbe der Region wider. Asien ist ein Ort der Kontraste, der Tradition und Innovation in sich vereint und Besucher aus aller Welt mit seiner Schönheit und Vielfalt beeindruckt.</p>
-                <!-- Quelle Image https://uma.com.vn/tin-tuc/kham-pha/sieu-tong-hop-ban-do-cac-nuoc-chau-a-kho-lon-phong-to-nam-2023.uma -->
-                <img id="asian_bild" src="https://bandovietnam.com.vn/media/uploads/uploads/19111920-ban-do-cac-nuoc-chau-a.jpeg" alt="Bild von Asian Kontinent">
-            </div>
-            <div class="geo_article__flagreview">
-                <h3>Asian Landenflag</h3>
-                <p>&nbsp;&nbsp;Im folgenden Unterricht werden wir die Nationalflaggen der asiatischen Länder kennenlernen. Lass uns gemeinsam bekannt werden und einige kleine Rätsel machen, um unser Gedächtnis zu überprüfen.</p>
-            </div>
-            <div class="geo_article__flag">
-                <!-- Alle Bilder hier drin mit Quelle Code https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_qu%E1%BB%91c_gia_v%C3%A0_v%C3%B9ng_l%C3%A3nh_th%E1%BB%95_ch%C3%A2u_%C3%81 -->
-                <div class="flag_box">
-                    <div>
-                        <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/100px-Flag_of_Vietnam.svg.png" alt="Vietnam Flag">
-                    </div>
 
-                    <p>Land: Viet Nam</p>
+            <div class="geo_article__einfuhrung">
+                <h2>ASIAN</h2><br>
+                <p>&nbsp;&nbsp;Asia, der größte Kontinent der Welt, ist für seine beeindruckende Vielfalt an Kulturen, Sprachen und Landschaften bekannt. Mit einer Fläche von über 44 Millionen Quadratkilometern beherbergt Asien eine reiche Geschichte, die von antiken Zivilisationen bis zu modernen Metropolen reicht. Die atemberaubenden Gebirge des Himalaya, die exotischen Strände Südostasiens, die Wüsten des Nahen Ostens und die pulsierenden Städte wie Tokio, Peking und Mumbai verleihen Asien eine faszinierende Anziehungskraft. Die Menschen in Asien sprechen eine Vielzahl von Sprachen, darunter Mandarin, Hindi, Arabisch und viele mehr. Die kulinarische Vielfalt, von der scharfen Küche Thailands bis zur raffinierten chinesischen Kochkunst, spiegelt die reiche kulturelle Erbe der Region wider. Asien ist ein Ort der Kontraste, der Tradition und Innovation in sich vereint und Besucher aus aller Welt mit seiner Schönheit und Vielfalt beeindruckt.</p>
+                <br>
+                <figure>
+                    <img id="asian_bild" src="../ressources/Kontinent-Bilder/asiamap.jpeg" alt="Bild von Asian Kontinent"><br>
+                    <figcaption>Quelle: <a href="https://bandovietnam.com.vn/ban-do-chau-a">https://bandovietnam.com.vn/ban-do-chau-a</a></figcaption>
+                </figure>
+                
+            </div><br>
+
+            <div class="geo_article__flagreview">
+                <h3>Asian Landenflag</h3><br>
+                <p>&nbsp;&nbsp;Im folgenden Unterricht werden wir die Nationalflaggen der asiatischen Länder kennenlernen. Lass uns gemeinsam bekannt werden und einige kleine Rätsel machen, um unser Gedächtnis zu überprüfen.</p>
+                <ul>
+                    <li>Lernziel: <ul>
+                        <li>Flags kennenlernen</li>
+                        <li>Hauptstadt merken</li>
+                        <li>Erinnerung verbessern</li>
+                        </ul>
+                    </li>
+                </ul><br>
+            </div>
+
+            <div class="geo_article__flag">
+                
+                <div class="flag_box">
+                    <figure>
+                        <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/100px-Flag_of_Vietnam.svg.png" alt="Vietnam Flag">
+                    </figure>
+                    <p>Land: Vietnam</p>
                     <p>Hauptstadt:Ha Noi</p>
                 </div>
+           
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Yemen.svg/100px-Flag_of_Yemen.svg.png" alt="Yemen Flag">
-                    </div>
+                    </figure>
                     <p>Land: Yemen</p>
                     <p>Hauptstadt:San'a'</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/100px-Flag_of_Uzbekistan.svg.png" alt="Uzbekistan Flag">
-                    </div>
+                    </figure>
                     <p>Land: Uzbekistan</p>
                     <p>Hauptstadt: Tashkent</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Turkmenistan.svg/100px-Flag_of_Turkmenistan.svg.png" alt="Turkmenistan Flag">
-                    </div>
+                    </figure>
                     <p>Land: Turkmenistan</p>
                     <p>Hauptstadt: Ashgabat</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/150px-Flag_of_the_People%27s_Republic_of_China.svg.png" alt="China Flag">
-                    </div>
+                    </figure>
                     <p>Land: China</p>
                     <p>Hauptstadt: Peking</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/150px-Flag_of_South_Korea.svg.png" alt="Korea Flag">
-                    </div>
+                    </figure>
                     <p>Land: Korea</p>
                     <p>Hauptstadt: Seoul</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_of_North_Korea.svg/150px-Flag_of_North_Korea.svg.png" alt="Nord Korea Flag">
-                    </div>
+                    </figure>
                     <p>Land: Nord Korea</p>
                     <p>Hauptstadt: Pjöngjang</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/150px-Flag_of_Turkey.svg.png" alt="Türkei Flag">
-                    </div>
+                    </figure>
                     <p>Land: Türkei</p>
                     <p>Hauptstadt: Ankara</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Flag_of_East_Timor.svg/150px-Flag_of_East_Timor.svg.png" alt="Ossttimor Flag">
-                    </div>
+                    </figure>
                     <p>Land: Ossttimor</p>
                     <p>Hauptstadt: Dili</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/150px-Flag_of_Thailand.svg.png" alt="Thailand Flag">
-                    </div>
+                    </figure>
                     <p>Land: Thailand</p>
                     <p>Hauptstadt: Bangkok</p>
                 </div>
 
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Flag_of_Syria.svg/150px-Flag_of_Syria.svg.png" alt="Syrien Flag">
-                    </div>
+                    </figure>
                     <p>Land: Syrien</p>
                     <p>Hauptstadt: Damakus</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/150px-Flag_of_Singapore.svg.png" alt="Singapur Flag">
-                    </div>
+                    </figure>
                     <p>Land: Singapur</p>
                     <p>Hauptstadt: Singapur-Stadt</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Qatar.svg/150px-Flag_of_Qatar.svg.png" alt="Katar Flag">
-                    </div>
+                    </figure>
                     <p>Land: Katar</p>
                     <p>Hauptstadt: Doha</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/150px-Flag_of_the_Philippines.svg.png" alt="Philippinen Flag">
-                    </div>
+                    </figure>
                     <p>Land: Philippinen</p>
                     <p>Hauptstadt: Manila</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Palestine.svg/150px-Flag_of_Palestine.svg.png" alt="Palästina Flag">
-                    </div>
+                    </figure>
                     <p>Land: Palästina</p>
                     <p>Hauptstadt: Jerusalem</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/150px-Flag_of_Pakistan.svg.png" alt="Pakistan Flag">
-                    </div>
+                    </figure>
                     <p>Land: Pakistan</p>
                     <p>Hauptstadt: Islamabad</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Oman.svg/150px-Flag_of_Oman.svg.png" alt="Oman Flag">
-                    </div>
+                    </figure>
                     <p>Land: Oman</p>
                     <p>Hauptstadt: Maskat</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/150px-Flag_of_Japan.svg.png" alt="Japan Flag">
-                    </div>
+                    </figure>
                     <p>Land: Japan</p>
                     <p>Hauptstadt: Tokio</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_Nepal.svg/83px-Flag_of_Nepal.svg.png" alt="Nepal Flag">
-                    </div>
+                    </figure>
                     <p>Land: Nepal</p>
-                    <p>Hauptstadt: 	Kathmandu</p>
+                    <p>Hauptstadt: Kathmandu</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Flag_of_Myanmar.svg/150px-Flag_of_Myanmar.svg.png" alt="Myanmar Flag">
-                    </div>
+                    </figure>
                     <p>Land: Myanmar</p>
                     <p>Hauptstadt: Naypyidaw</p>
                 </div>
             </div>
             <div id="geo_article__kurzubung">
                 <h3>Quizz <span><i id="quizz_zeichen" class="fa-solid fa-question"></i></span></h3>
-                <p id="test"></p>
+                <br>
+                <ul>
+                    <li>Aufgabestellung: <ul>
+                        <li>Gegeben sind Flags von einem Land</li>
+                        <li>Es gibt nur 1 richtige Antwort</li>
+                        <li>Antwort wird nach Knopfclicken angezeigt</li>
+                    </ul></li>
+
+                    <li>Ziel: <ul>
+                        <li>Flag mit entsprechendem Land erkennen</li>
+                        <li>Erinnerung verbessern</li>
+                    </ul></li>
+                </ul>
+                <br>
                 <div class="geo_article__kurzubung__layout layout1">
-                    <div>
+                    <figure>
                         <img class="quizz_flag_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/100px-Flag_of_Vietnam.svg.png" alt="Vietnam Flag">
-                    </div>
+                    </figure>
                     <p>Welches Land ist das?</p>
                     <div class="anwort_button">
                         <button class="aussage_button button1">VietNam</button>
                         <button class="aussage_button button1">China</button>
                         <button class="aussage_button button1">Syrien</button>
                     </div>
+
                     <div id="richtige" class="antwort richtig">
                         <p>BINGO!</p>
                     </div>
+
                     <div id="falsche" class="antwort falsch">
                         <p>OPPS!</p>
                     </div>
                 </div>
 
+
                 <div class="geo_article__kurzubung__layout layout2">
-                    <div>
-                        <img class="quizz_flag_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/150px-Flag_of_Japan.svg.png" alt="Japan">
-                    </div>
+                    <figure>
+                        <img class="quizz_flag_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/150px-Flag_of_Japan.svg.png" alt="Japan Flags">
+                    </figure>
                     <p>Welches Land ist das?</p>
+
                     <div class="anwort_button">
                         <button class="aussage_button button2">China</button>
                         <button class="aussage_button button2">Japan</button>
                         <button class="aussage_button button2">Korea</button>
                     </div>
+
                     <div class="antwort richtig">
                         <p>BINGO!</p>
                     </div>
+
                     <div class="antwort falsch">
                         <p>OPPS!</p>
                     </div>
                 </div>
+
+
                 <div class="geo_article__kurzubung__layout layout3">
-                    <div>
-                        <img class="quizz_flag_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Qatar.svg/150px-Flag_of_Qatar.svg.png" alt="Katar">
-                    </div>
+                    <figure>
+                        <img class="quizz_flag_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Qatar.svg/150px-Flag_of_Qatar.svg.png" alt="Katar Flags">
+                    </figure>
                     <p>Welches Land ist das?</p>
                     <div class="anwort_button">
                         <button class="aussage_button button3">Philippinen</button>
                         <button class="aussage_button button3">Indonesien</button>
                         <button class="aussage_button button3">Katar</button>
                     </div>
+
                     <div class="antwort richtig">
-                        <p>PERFEKT</p>
+                        <p>BINGO!</p>
                     </div>
+
                     <div class="antwort falsch">
                         <p>OPPS!</p>
                     </div>
+
                 </div>
+
                 <div>
-                    <button id="asian_pre" class="button" >Rückwärt</button>
-                    <button id="asian_next" class="button" >Vorwärt</button>
+                    <button id="asian_pre" class="button">Zurück</button>
+                    <button id="asian_next" class="button">Weiter</button>
                 </div>
-            </div>
+            </div>   
         </div>
         
         <div id="geo_article__europe">
             <div class="geo_article__einfuhrung">
-                <h3>EUROPE</h3>
+                <h2>EUROPE</h2><br>
                 <p>&nbsp;&nbsp;Europa, der zweitkleinste Kontinent der Erde, ist bekannt für seine reiche Geschichte, vielfältigen Kulturen und beeindruckenden Landschaften. Mit einer Fläche von etwa 10,18 Millionen Quadratkilometern bietet Europa eine faszinierende Mischung aus antiken Denkmälern, moderner Architektur und malerischen Naturgebieten. Die Region erstreckt sich von den majestätischen Alpen im Süden bis zu den weiten Ebenen Osteuropas und den atemberaubenden Fjorden im Norden. Europa beherbergt eine Vielzahl von Sprachen, darunter Deutsch, Englisch, Französisch, Spanisch und viele andere. Die kulinarische Vielfalt reicht von den köstlichen Pasta-Gerichten in Italien über die deftigen Wurstspezialitäten in Deutschland bis hin zu den delikaten Tapas in Spanien. Europa ist ein kultureller Schmelztiegel, in dem Tradition und Moderne aufeinandertreffen. Die Vielfalt der historischen Städte wie Rom, Paris und Prag fasziniert Besucher aus aller Welt. Insgesamt ist Europa ein Ort von großer kultureller Bedeutung und landschaftlicher Schönheit.</p>
-                <!-- https://pixabay.com/vi/photos/ch%C3%A2u-%C3%A2u-qu%E1%BB%91c-gia-b%E1%BA%A3n-%C4%91%E1%BB%93-ch%C3%A2u-l%E1%BB%A5c-3483539/ -->
-                <img id="europe_bild" src="https://cdn.pixabay.com/photo/2018/06/18/23/03/europe-3483539_1280.jpg" alt="Bild von Europe Kontinent">
+                <br>
+                <figure>
+                    <img id="europe_bild" src="../ressources/Kontinent-Bilder/Europemap.jpg" alt="Bild von Europe Kontinent"> <br>
+                    <figcaption>Quelle: MabelAmber on Pixabay.com</figcaption><br>
+                </figure>
+                
             </div>
             <div class="geo_article__flagreview">
-                <h3>Europe Landenflag</h3>
+                <h3>Europe Landenflag</h3><br>
                 <p>Im Folgenden lernen wir erneut die Nationalflaggen einiger europäischer Länder kennen. Lassen Sie uns fortfahren, uns an die neuen Flaggen zu erinnern, und danach einige kleine Übungen gemeinsam machen.</p>
-            </div>
+            </div><br>
             <div class="geo_article__flag">
-                <!-- Image Quell Code https://vi.wikipedia.org/wiki/C%C3%A1c_n%C6%B0%E1%BB%9Bc_th%C3%A0nh_vi%C3%AAn_Li%C3%AAn_minh_ch%C3%A2u_%C3%82u -->
+    
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/35px-Flag_of_Germany.svg.png" alt="Deutschland">
-                    </div>
+                    </figure>
                     <p>Land: Deutschland</p>
                     <p>Hauptstadt: Berlin</p>
                 </div>
                 
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg/35px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg.png" alt="Französisch">
-                    </div>
+                    </figure>
                     <p>Land: Frankreich</p>
                     <p>Hauptstadt: Paris</p>
                 </div>
 
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/35px-Flag_of_Greece.svg.png" alt="Griechenland">
-                    </div>
+                    </figure>
                     <p>Land: Griechenland</p>
                     <p>Hauptstadt: Athen</p>
                 </div>
 
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/27px-Flag_of_Belgium.svg.png" alt="Belgien">
-                    </div>
+                    </figure>
                     <p>Land: Belgien</p>
                     <p>Hauptstadt: Brüssel</p>
                 </div>
 
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/31px-Flag_of_Denmark.svg.png" alt="Dänemark">
-                    </div>
+                    </figure>
                     <p>Land: Dänemark</p>
                     <p>Hauptstadt: Kopenhagen</p>
                 </div>
 
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/35px-Flag_of_Ireland.svg.png" alt="Irland">
-                    </div>
+                    </figure>
                     <p>Land: Irland</p>
                     <p>Hauptstadt: Dublin</p>
                 </div>
 
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/35px-Flag_of_Poland.svg.png" alt="Polen">
-                    </div>
+                    </figure>
                     <p>Land: Polen</p>
                     <p>Hauptstadt: Warschau</p>
                 </div>
 
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Flag_of_Luxembourg.svg/35px-Flag_of_Luxembourg.svg.png" alt="Luxemburg">
-                    </div>
+                    </figure>
 
                     <p>Land: Luxemburg</p>
                     <p>Hauptstadt: Luxemburg</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/35px-Flag_of_Portugal.svg.png" alt="Portugal">
-                    </div>
+                    </figure>
                     <p>Land: Portugal</p>
                     <p>Hauptstadt: Lissabon</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/35px-Flag_of_Spain.svg.png" alt="Spanien">
-                    </div>
+                    </figure>
                     <p>Land: Spanien</p>
                     <p>Hauptstadt: Madrid</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/35px-Flag_of_Sweden.svg.png" alt="Schweden">
-                    </div>
+                    </figure>
                     <p>Land: Schweden</p>
                     <p>Hauptstadt: Stockholm</p>
                 </div>
 
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Finland.svg/35px-Flag_of_Finland.svg.png" alt="Finnland">
-                    </div>
-
+                    </figure>
                     <p>Land: Finnland</p>
                     <p>Hauptstadt: Helsinki</p>
                 </div>
-            </div>
+            </div><br>
 
             <div id="geo_article__hauptstadt">
-                <h3>Länder generelle Statistik</h3>
+                <h3>Länder generelle Statistik</h3><br>
                 <p>Sofort werden Sie weitere grundlegende Informationen und berühmte Sehenswürdigkeiten einiger europäischer Länder kennenlernen. Dies wird Ihnen einen umfassenderen Überblick verschaffen und es Ihnen erleichtern, diese Länder anhand von Bildern leichter zu erkennen.</p>
-                <table id="geo_article__hauptstadt__table">
+                <br><table id="geo_article__hauptstadt__table">
                     <tr>
                         <th>Land</th>
                         <th>Erkannte Bilder</th>
-                        <th>Anzahl Wolker</th>
+                        <th>Anzahl Bewöhner</th>
                         <th>Oberfläche</th>
                     </tr>
 
                     <tr>
                         <td>Deutschland</td>
-                        <td><img class="landen_hauptstadt" src="/ressources/geo_europe_bilder/berlin.jpg" alt="BrandenburgerTor von Berlin Deutschland"></td>
+                        <td>
+                            <figure>
+                                <img class="landen_hauptstadt" src="../ressources/geo_europe_bilder/berlin.jpg" alt="BrandenburgerTor von Berlin Deutschland">
+                                <figcaption>Brandenburger Tor</figcaption>
+                            </figure>
+                            
+                        </td>
                         <td> <strong>83.2 Millionen (2021)</strong></td>
                         <td> <strong>357 022 km<sup>2</sup></strong></td>
                     </tr>
 
                     <tr>
                         <td>Frankreich</td>
-                        <td><img class="landen_hauptstadt" src="/ressources/geo_europe_bilder/paris.jpg" alt="Paris von Frankreich"></td>
+                        <td>
+                            <figure>
+                                <img class="landen_hauptstadt" src="../ressources/geo_europe_bilder/paris.jpg" alt="Paris von Frankreich">
+                                <figcaption>Eiffel Tower</figcaption>
+                            </figure>
+                            
+                        </td>
                         <td><strong>67.75 Millionen (2021)</strong></td>
                         <td><strong>551 695 km<sup>2</sup></strong></td>
                     </tr>
 
                     <tr>
                         <td>Griechenland</td>
-                        <td><img class="landen_hauptstadt" src="/ressources/geo_europe_bilder/SantoriniGriechenLand.jpg" alt="Santorini von Griechenland"></td>
+                        <td>
+                            <figure>
+                                <img class="landen_hauptstadt" src="../ressources/geo_europe_bilder/SantoriniGriechenLand.jpg" alt="Santorini von Griechenland">
+                                <figcaption>Santorini</figcaption>
+                            </figure>
+                            
+                        </td>
                         <td><strong>10.64 Millionen (2021)</strong></td>
                         <td><strong>131 957 km<sup>2</sup></strong></td>
                     </tr>
                     <tr>
                         <td>Belgien</td>
-                        <td><img class="landen_hauptstadt" src="/ressources/geo_europe_bilder/brussels.jpg" alt="brussels von Belgien"></td>
+                        <td>
+                            <figure>
+                                <img class="landen_hauptstadt" src="../ressources/geo_europe_bilder/brussels.jpg" alt="brussels von Belgien">
+                            </figure>
+                            <figcaption>Bruxelles</figcaption>
+                        </td>
                         <td><strong>11.59 Millionen (2021)</strong></td>
                         <td><strong>30 688 km<sup>2</sup></strong></td>
                     </tr>
                     <tr>
                         <td>Dänemark</td>
-                        <td><img class="landen_hauptstadt" src="/ressources/geo_europe_bilder/copenhagen.jpg" alt="copenhagen von Dänemark"></td>
+                        <td>
+                            <figure>
+                                <img class="landen_hauptstadt" src="../ressources/geo_europe_bilder/copenhagen.jpg" alt="copenhagen von Dänemark">
+                                <figcaption>Copenhagen Hafen</figcaption>
+                            </figure>
+                            
+                        </td>
                         <td><strong>5.857 Millionen (2021)</strong></td>
                         <td><strong>42 952 km<sup>2</sup></strong></td>
                     </tr>
                     <tr>
                         <td>Irland</td>
-                        <td><img class="landen_hauptstadt" src="/ressources/geo_europe_bilder/ducketts-grove-irland.jpg" alt="ducketts-grove-irland"></td>
+                        <td>
+                            <figure>
+                                <img class="landen_hauptstadt" src="../ressources/geo_europe_bilder/ducketts-grove-irland.jpg" alt="ducketts-grove-irland">
+                                <figcaption>Ducketts Grove</figcaption>
+                            </figure>
+                        </td>
                         <td><strong>5.033 Millionen (2021)</strong></td>
                         <td><strong>70 273 km<sup>2</sup></strong></td>
                     </tr>
                     <tr>
                         <td>Polen</td>
-                        <td><img class="landen_hauptstadt" src="/ressources/geo_europe_bilder/malbork-polen.jpg" alt="malbork-polen"></td>
+                        <td>
+                            <figure>
+                                <img class="landen_hauptstadt" src="../ressources/geo_europe_bilder/malbork-polen.jpg" alt="malbork-polen">
+                                <figcaption>Malbork</figcaption>
+                            </figure>
+                        </td>
                         <td><strong>37.75 Millionen (2021)</strong></td>
                         <td><strong>322 575 km<sup>2</sup></strong></td>
                     </tr>
                     <tr>
                         <td>Luxemburg</td>
-                        <td><img class="landen_hauptstadt" src="/ressources/geo_europe_bilder/luxembourg-vianden.jpg" alt="luxembourg-vianden"></td>
+                        <td>
+                            <figure>
+                                <img class="landen_hauptstadt" src="../ressources/geo_europe_bilder/luxembourg-vianden.jpg" alt="luxembourg-vianden">
+                                <figcaption>Vianden Schloss</figcaption>
+                            </figure>
+                        </td>
                         <td><strong>10.64 Millionen (2021)</strong></td>
                         <td><strong>131 957 km<sup>2</sup></strong></td>
                     </tr>
                     <tr>
                         <td>Portugal</td>
-                        <td><img class="landen_hauptstadt" src="/ressources/geo_europe_bilder/lisbon-portugal.jpg" alt="lisbon-portugal"></td>
+                        <td>
+                            <figure>
+                                <img class="landen_hauptstadt" src="../ressources/geo_europe_bilder/lisbon-portugal.jpg" alt="lisbon-portugal">
+                                <figcaption>Lisbon</figcaption>
+                            </figure>
+                        </td>
                         <td><strong>10.33 Millionen (2021)</strong></td>
                         <td><strong>92 152 km<sup>2</sup></strong></td>
                     </tr>
                     <tr>
                         <td>Spanien</td>
-                        <td><img class="landen_hauptstadt" src="/ressources/geo_europe_bilder/royal-spain.jpg" alt="royal-spain"></td>
+                        <td>
+                            <figure><img class="landen_hauptstadt" src="../ressources/geo_europe_bilder/royal-spain.jpg" alt="royal-spain"></figure>
+                            <figcaption>Royal Palace</figcaption>
+                        </td>
                         <td><strong>47.42 Millionen (2021)</strong></td>
                         <td><strong>506 030 km<sup>2</sup></strong></td>
                     </tr>
                     <tr>
                         <td>Schweden</td>
-                        <td><img class="landen_hauptstadt" src="/ressources/geo_europe_bilder/stockholm.jpg" alt="stockholm Schweden"></td>
+                        <td>
+                            <figure>
+                                <img class="landen_hauptstadt" src="../ressources/geo_europe_bilder/stockholm.jpg" alt="stockholm Schweden">
+                                <figcaption>Stockholm</figcaption>
+                            </figure>
+                        </td>
                         <td><strong>10.42 Millionen (2021)</strong></td>
                         <td><strong>528 447 km<sup>2</sup></strong></td>
                     </tr>
 
                     <tr>
                         <td>Finnland</td>
-                        <td><img class="landen_hauptstadt" src="/ressources/geo_europe_bilder/helsinki.jpg" alt="Helsinki Finnland"></td>
+                        <td>
+                            <figure>
+                                <img class="landen_hauptstadt" src="../ressources/geo_europe_bilder/helsinki.jpg" alt="Helsinki Finnland">
+                                <figcaption>Helsinki</figcaption>
+                            </figure>
+                        </td>
                         <td><strong>5.541 Millionen (2021)</strong></td>
                         <td><strong>338 462 km<sup>2</sup></strong></td>
                     </tr>
                 </table>
-
+                <br>
                 <div id="geo_article__europe__ubung">
-                    <p id="fragen"></p>
-                    <form action="">
-                        <input type="radio" name="question_one" id="antwort_one">
-                        <input type="radio" name="question_one" id="antwort_two">
-                        <input type="radio" name="question_one" id="antwort_three">
-                    </form>
-                </div>
+                    <h3>Quizz <span><i id="quizz_zeichen" class="fa-solid fa-question"></i></span></h3>
+                    <br>
+                    <ul>
+                        <li>Aufgabestellung: <ul>
+                            <li>Gegeben sind die Informationen oben</li>
+                            <li>Radiobox Form, also nur 1 richtige Antwort</li>
+                            <li>Checkbox Form, also mehr richtige Antwort möglich</li>
+                        </ul></li>
+                        <li>Check Antwort: <ul>
+                            <li>Commit Button zu bestätigen, Reset Button neu zu laden</li>
+                            <li>Richtige Antwort mit <mark id="blau_markieren">blauem</mark> Schrift, falsche mit <mark id="rot_markieren">rotem</mark> rotem Schrift</li>
+                        </ul></li>
+                    </ul> <br>
+                    <div class="geo_article__europe__ubung_layout">
 
+                        <p class="fragen">Welches Land hat 131.957 km<sup>2</sup> Oberfläche?</p>
+                        <br>
+                         <form action="">
+
+                        <input type="radio" name="question_one" id="antwort_one" value="griechenland">
+                        <label class="answer_signal" for="antwort_one">Griechen Land</label> <br>
+                        <input type="radio" name="question_one" id="antwort_two" value="portugal">
+                        <label class="answer_signal" for="antwort_two">Portugal</label> <br>
+                        <input type="radio" name="question_one" id="antwort_three" value="luxemburg">
+                        <label class="answer_signal" for="antwort_three">Luxemburg</label> <br> <br>
+                        <button type="button" id="europe_quizz_commit">bestätigen</button>
+                        <button type="button" class="europe_quizz_reset">reset</button>
+                        </form> <br>
+
+                    </div><br>
+                    
+                    <div class="geo_article__europe__ubung_layout">
+
+                        <p class="fragen">Wähl die richtige Aussagen, mehr Antworte sind möglich</p> <br>
+                        <form action="">
+                        <input type="checkbox" name="question_two" id="antwort_first" value="richtig_answer">
+                        <label class="antwort_signal" for="antwort_first">Santorini gehört zu Griechenland und hat 10.64 Million Bewöhner (2021)</label><br>
+                        <input type="checkbox" name="question_two" id="antwort_second" value="falsche_answer">
+                        <label class="antwort_signal" for="antwort_second">Belgien besitzt Copenhagen Hafen</label> <br>
+                        <input type="checkbox" name="question_two" id="antwort_third" value="richtig_answer">
+                        <label class="antwort_signal" for="antwort_third">Malbork ist von Polen und verfügt über 322.575 km<sup>2</sup></label><br><br>
+                        <button type="button" id="europe_quizz_commit_checkbox">bestätigen</button>
+                        <button type="button" class="europe_quizz_reset">reset</button>
+                        </form>
+
+                    </div>
+                </div>
             </div>
         </div>
         <div id="geo_article__americas">
             <div class="geo_article__einfuhrung">
-                <h2>AMERICAS</h2>
+                <h2>AMERICAS</h2><br>
                 <p>&nbsp;&nbsp;Nord- und Südamerika, gelegen westlich des Atlantischen Ozeans, bilden einen vielfältigen Kontinent mit reicher Kultur, Geschichte und Natur. Hier können Sie pulsierende, moderne Städte wie New York und Sao Paulo entdecken und gleichzeitig die natürliche Schönheit des Amazonas-Regenwaldes oder der Rocky Mountains genießen. Amerika ist auch für seine kulturelle Vielfalt bekannt, die durch die Verschmelzung der Ureinwohner mit Einwanderergemeinschaften entsteht und ein äußerst vielfältiges und lebendiges Bild zeichnet. Von der historischen Kultur der Maya im mittleren Amerika bis zur modernen Innovation des Silicon Valley im Norden Amerikas bietet der Kontinent eine beeindruckende Vielfalt, die darauf wartet, erkundet zu werden.</p>
-                <!-- https://en.wikipedia.org/wiki/Americas -->
-                <img id="americas_bild" src="https://img.loigiaihay.com/picture/2017/0327/bandomy-125-dl5.jpg" alt="Bild von Americas Kontinent">
+                <br>
+                <figure>
+                    <img id="americas_bild" src="../ressources/Kontinent-Bilder/Americasmap.jpg" alt="Bild von Americas Kontinent"><br>
+                    <figcaption>Quelle: <a href="https://en.wikipedia.org/wiki/Americas" target="_blank">https://en.wikipedia.org/wiki/Americas</a></figcaption>
+                </figure><br>
+                
             </div>
             <div class="geo_article__flagreview">
-                <h3>Americas Landenflag</h3>
+                <h3>Americas Landenflag</h3><br>
                 <p>Im Folgenden machen wir uns erneut mit den Nationalflaggen einiger Länder in Amerika vertraut. Lassen Sie uns fortsetzen, uns an die neuen Flaggen zu erinnern, und danach einige kleine Übungen gemeinsam machen.</p>
-            </div>
+            </div><br>
             <div class="geo_article__flag">
-                <!-- https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_qu%E1%BB%91c_gia_Ch%C3%A2u_M%E1%BB%B9_theo_di%E1%BB%87n_t%C3%ADch -->
+              
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/188px-Flag_of_Canada_%28Pantone%29.svg.png" alt="Canada">
-                    </div>
+                    </figure>
                     <p>Land: Canada</p>
                     <p>Hauptstadt: Ottawa</p>
                 </div>
                 
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/188px-Flag_of_the_United_States_%28Pantone%29.svg.png" alt="American">
-                    </div>
+                    </figure>
                     <p>Land: American</p>
                     <p>Hauptstadt: Washington D.C</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/188px-Flag_of_Mexico.svg.png" alt="Mexico">
-                    </div>
+                    </dfigure>
                     <p>Land: Mexico</p>
                     <p>Hauptstadt: Mexico City</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_the_Bahamas.svg/188px-Flag_of_the_Bahamas.svg.png" alt="Bahamas">
-                    </div>
+                    </figure>
                     <p>Land: Bahamas</p>
                     <p>Hauptstadt: Nassau</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_Guatemala.svg/188px-Flag_of_Guatemala.svg.png" alt="Guatemala">
-                    </div>
+                    </figure>
                     <p>Land: Guatemala</p>
                     <p>Hauptstadt: Guatemala City</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Costa_Rica.svg/188px-Flag_of_Costa_Rica.svg.png" alt="Costa Rica">
-                    </div>
+                    </figure>
                     <p>Land: Costa Rica</p>
                     <p>Hauptstadt: José</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/188px-Flag_of_Panama.svg.png" alt="Panama">
-                    </div>
+                    </figure>
                     <p>Land: Panama</p>
                     <p>Hauptstadt: Panama City</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Cuba.svg/188px-Flag_of_Cuba.svg.png" alt="Cuba">
-                    </div>
+                    </figure>
                     <p>Land: Cuba</p>
                     <p>Hauptstadt: Havana</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/188px-Flag_of_Jamaica.svg.png" alt="Jamaica">
-                    </div>
+                    </figure>
                     <p>Land: Jamaica</p>
                     <p>Hauptstadt: Kingston</p>
                 </div>
                 <div class="flag_box">
-                    <div>
+                    <figure>
                         <img class="flag_image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/188px-Flag_of_Brazil.svg.png" alt="Brazil">
-                    </div>
+                    </figure>
                     <p>Land: Brazil</p>
                     <p>Hauptstadt: Brasília</p>
                 </div>
-            </div>
+            </div> <br>
             <div id="geo_article__americas__landscape">
-                <h3>Sehenswürdigkeiten von Americas</h3>
+                <h3>Sehenswürdigkeiten von Americas</h3><br>
                 <p>Die Sehenswürdigkeiten in Amerika haben immer ihre eigenen einzigartigen Merkmale. Jedes Land zeichnet sich durch markante architektonische Elemente aus, die eng mit seiner kulturellen Geschichte verbunden sind. Schon beim ersten Blick erkennen wir diese Merkmale deutlich. Lassen Sie uns einige davon gemeinsam betrachten.</p>
                 <div id="geo_article__americas__landscape__infor">
                     <div id="americas_infor">
-                        <img id="americas_bilder" src="/ressources/geo_americas_bilder/toronto-canada.jpg" alt="toronto-canada">
+                        
+                        <img id="americas_bilder" src="../ressources/geo_americas_bilder/toronto-canada.jpg" alt="toronto-canada">
+                                         
                         <span><i id="icon-pre" class="fa-solid fa-chevron-left "></i></span>
                         <span><i id="icon-next" class="fa-solid fa-chevron-right "></i></span>
                     </div>
@@ -624,7 +781,7 @@
     </article>
     
     <aside id="geo_aside">
-        <h3>Hier befindet sich Agend von Seite:</h3>
+        <h3>Hier befindet sich Agend von Seite:</h3><br>
         <div id="aside_agendseite">
             <ul>
                 <li class="agend_list"><a href="#geo_section__frame1">Einführung mit Video</a></li>
@@ -636,15 +793,27 @@
             </ul>
         </div>
     </aside>
+
+    <div id="geo_pictureQuell">
+        <h2>Bilder Quelle von Kontinente</h2><br>
+        <ol>
+            <li><a href="https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_qu%E1%BB%91c_gia_v%C3%A0_v%C3%B9ng_l%C3%A3nh_th%E1%BB%95_ch%C3%A2u_%C3%81">Asian Landenflag Quelle und mehr Informationen dazu </a></li>
+            <li><a href="https://vi.wikipedia.org/wiki/C%C3%A1c_n%C6%B0%E1%BB%9Bc_th%C3%A0nh_vi%C3%AAn_Li%C3%AAn_minh_ch%C3%A2u_%C3%82u">Europe Landenflag Quelle und mehr Informationen dazu</a></li>
+            <li><a href="https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_qu%E1%BB%91c_gia_Ch%C3%A2u_M%E1%BB%B9_theo_di%E1%BB%87n_t%C3%ADch">Americas Landenflag Quelle und mehr Informationen dazu</a></li>
+        </ol>
+    </div>
     
     <footer id="footer">
         
         <div id="footer-oben">
-            <h3>123Webseite</h3>
-            <div>Image</div>
+            <h2>Kids Academie</h2>
+            <figure>
+                <img src="../ressources/Startseite/android-chrome-192x192.png" alt="Website Symbol"><br>
+                <figcaption>Unsere Website Symbol</figcaption>
+            </figure>
         </div>
         <hr>
-        <div id="footer-unter">
+        <div id="footer-unten">
             <address>
                 <p>Hochschule Worms</p>
                 <p>Erenburgstraße 19</p>

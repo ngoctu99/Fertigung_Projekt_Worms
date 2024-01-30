@@ -6,13 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     
-    <link rel="icon" type="image/png" href="../ressources/Startseite/favicon.ico">
     <title>Startseite</title>
     
-    <link rel="stylesheet" href="style.css">
-
+    <!-- Hyperlink für Favicon Website Symbol-->
+    <link rel="icon" type="image/png" href="../ressources/Startseite/favicon.ico">
     <!-- Hyperlink fuer Icon in fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" async></script>
     
 </head>
@@ -21,11 +22,11 @@
     
     <header id="ind_header">
         <div class="ind_header__titel">
-            <i class="fa-solid fa-house"></i>
-            <h3>Kids Academy</h3>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <h3>Kids Academie</h3>
         </div>
     </header>
-
+    
     <nav id="navigation">
 
         <div id="toggle"><i id="toggle__control" class="fa-solid fa-bars"></i></div>
@@ -41,14 +42,14 @@
 
         </div>
     </nav>
-    
+   
     <section id="mainseite">
         
         <div id="mainseite__infor">
 
             <h2>Mehr über uns</h2>
 
-            <p>&nbsp; &nbsp; Heuzutage ist Internet extrem schnell entwickelt. Einerseite gibt es
+            <p>&nbsp;Heuzutage ist Internet extrem schnell entwickelt. Einerseite gibt es
             viele Vorteile, Resource effektive und vielfältig zuzugreifen , anderseite
             is es eine Menge Probleme vorhanden, besondern für die Kinder und ihre Kindheit.
             Daher gibt uns immer die Mühe, eine geeignete Webseite komzipieren, in der wir Beste für die Kinder
@@ -57,62 +58,104 @@
             
             <figure class="mainseite_image">
                 
-                <img src="../ressources/Startseite/mainseite_infor_image.jpg" alt="Kinder mit Computer" title="Kinder mit Computer">
-                <figcaption>Quelle: StartupStockPhotos/pixabay</figcaption>
+                <img src="../ressources/Startseite/mainseite_infor_image.jpg" alt="Kinder mit Computer" title="Kinder mit Computer"><br>
+                <figcaption>Bilder Quelle: StartupStockPhotos/pixabay</figcaption>
 
             </figure>
 
         </div>
-        
-        <div id="mainseite__biolektion">
 
-            <h2>Biologie Unterricht</h2>
+        <div id="mainseite_modul">
+            <div id="mainseite__biolektion">
+
+                <figure class="mainseite_figureImg">
+                    <img class="mainseite__modulBackground" src="../ressources/Startseite/mainseite_human-skeleton.jpg" alt="Human skeleton background"><br>
+                    <figcaption>Bilder Quelle: PublicDomainPicture pixabay.com</figcaption>
+                </figure><br>
     
-            <p class="mainseite_absatz">In diesem Unterricht werden Sie mehr über unseren menschlichen Körper erfahren, die verschiedenen Teile darin, wie er aussieht und wie er funktioniert. Dadurch lernen Sie, wie Sie Ihren Körper vor schädlichen Einflüssen schützen können.</p>
+                <div class="mainseite_inforModul">
+                    <span><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i></span>
                 
-            <a class="spring_link" href="Biologie_lernseite_1.html">Biologie Unterricht springen</a>
+                    <p class="mainseite_absatz">Modul: Biologie</p>
+                    <p class="mainseite_absatz">Art: Theory Unterricht</p>
+                    <p class="mainseite_absatz">Inhalt: Menschen Körper</p><br>
+                        
+                    <a class="mainseite__spring_link" href="Biologie_lernseite_1.html">Biologie Unterricht springen</a>
+                </div>
+                
+            </div>
+    
+            <div id="mainseite__bioübung">
+    
+                <figure class="mainseite_figureImg">
+                    <img class="mainseite__modulBackground" src="../ressources/Startseite/mainseite_bioubung.jpg" alt="Human Gen background"><br>
+                    <figcaption>Bilder Quelle: mirerek8 pixabay.com</figcaption><br>
+                </figure>
+    
+                <div class="mainseite_inforModul">
+                    <span><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i></span>
+                
+                    <p class="mainseite_absatz">Modul: Biologie</p>
+                    <p class="mainseite_absatz">Art: Übungen</p>
+                    <p class="mainseite_absatz">Inhalt: Menschen Körper</p><br>
+                        
+                    <a class="mainseite__spring_link" href="Biologie_lernseite_2.html">Biologie Übung springen</a>
+                </div>
+             
+            </div>
+    
+            <div id="mainseite__geolektion">
+    
+                <figure class="mainseite_figureImg">
+                    <img class="mainseite__modulBackground" src="../ressources/Startseite/mainseite_globe_image.jpg" alt="Planet background"><br>
+                    <figcaption>Bilder Quelle: pixabay.com</figcaption>
+                </figure><br>
+    
+                <div class="mainseite_inforModul">
+                    <span><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i></span>
+                
+                    <p class="mainseite_absatz">Modul: Geography</p>
+                    <p class="mainseite_absatz">Art: Theory Unterricht</p>
+                    <p class="mainseite_absatz">Inhalt: Landenflag <br>Sehenswürdigkeiten</p><br>
+                        
+                    <a class="mainseite__spring_link" href="geo_lernseite_1.html">Geographie Unterrricht springen</a>
+                </div>
+    
+            </div>
             
+            <div id="mainseite__geoübung">
+                 
+                <figure class="mainseite_figureImg">
+                    <img class="mainseite__modulBackground" src="../ressources/Startseite/mainseite_geoubung_image.jpg" alt="Universal Planet background"><br>
+                    <figcaption>Bilder Quelle: FelixMittermeier pixabay.com</figcaption>
+                </figure><br>
+    
+                <div class="mainseite_inforModul">
+                    <span><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star" ></i></span>
+                
+                    <p class="mainseite_absatz">Modul: Geography</p>
+                    <p class="mainseite_absatz">Art: Übungen</p>
+                    <p class="mainseite_absatz">Inhalt: Quizz auflösen</p><br>
+                        
+                    <a class="mainseite__spring_link" href="geo_übung_1.html">Geographie Übung springen</a>
+                </div>
+                
+            </div>
         </div>
-
-        <div id="mainseite__bioübung">
-
-            <h2>Biologie Übung</h2>
-            <p class="mainseite_absatz">In diesem Übungsteil werden wir das Wissen überprüfen, das wir im theoretischen Teil des Unterrichts gelernt haben. Das Ziel ist es, uns zu helfen, uns besser an die verschiedenen Teile des menschlichen Körpers zu erinnern und gleichzeitig zu überprüfen, wie gut unser Gedächtnis ist.</p>
-
-            <a class="spring_link" href="Biologie_lernseite_2.html">Biologie Übung springen</a>
-
-        </div>
-
-        <div id="mainseite__geolektion">
-            
-            <h2>Geographie Unterricht</h2>
-
-            <p class="mainseite_absatz" >&nbsp; &nbsp; Einer interaktiven Lektionen und Übungen erleben Kinder eine aufregende Reise durch die faszinierende Welt der Länderflaggen. 
-            Bunte Grafiken, animierte Symbole und kinderfreundliche Erklärungen machen das Lernen zu einem spielerischen Abenteuer.
-            Die Kinder können mithilfe von Quizzen und interaktiven Schnittstelle spielerisch ihre Kenntnisse
-            vertiefen und herausfinden, welche Farben und Symbole die verschiedenen Länder repräsentieren.</p>
-
-            <a class="spring_link" href="geo_lernseite_1.html">Geographie Unterrricht springen</a>
-           
-        </div>
-        
-        <div id="mainseite__geoübung">
-            <h2>Geographie Übung</h2>
-
-            <p class="mainseite_absatz">In diesem Kapitel werden wir gemeinsam Übungen zu den theoretischen Inhalten machen, die auf der vorherigen Seite gelernt wurden. Das Ziel ist es, sich an das Gelernte zu erinnern und zu überprüfen, wie gut Sie sich erinnern können.</p>
-            <a class="spring_link" href="geo_übung_1.html">Geographie Übung springen</a>
-        </div>
-           
+    
     </section>
     
     <footer id="footer">
         
         <div id="footer-oben">
-            <h3>123Webseite</h3>
-            <div>Image</div>
+            <h2>Kids Academie</h2>
+            <figure>
+                <img src="../ressources/Startseite/android-chrome-192x192.png" alt="Website Symbol"><br>
+                <figcaption>Unsere Website Symbol</figcaption>
+            </figure>
         </div>
         <hr>
-        <div id="footer-unter">
+        <div id="footer-unten">
             
             <address>
                 <p>Hochschule Worms</p>
